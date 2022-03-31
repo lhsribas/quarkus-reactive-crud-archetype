@@ -148,14 +148,18 @@ how to build applications with Clean Architecture concepts.
 ```
 Each Package has its responsibilities, that we explain below:
 
-### App
-    TODO:
+### app
 
-### Cross
-    TODO:
+Contains the source code structure that connects the front-end with the back-end, where the Rest, DTO and Services services are located to connect with the Domain layer;
 
-### Domain
-    TODO:
+### cross
 
-### Infra -> DB
-    TODO:
+Responsible for containing implementations of utilities that can be used in all layers of the architecture;
+
+### domain
+
+Responsible for storing the system's business logic and entity classes. This layer communicates with the infrastructure, passing the data to be stored or sent to a kafka topic for example;
+
+### infra -> DB
+
+Responsible for containing all persistence entities and repositories that communicate with the database, making data storage possible;
