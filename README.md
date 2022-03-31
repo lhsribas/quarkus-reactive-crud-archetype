@@ -45,7 +45,6 @@ You need to run the following command to give permission to execute script mvnw
 ```
 chmod 0755 mvnw
 ```
-## Postgres Container
 
 ### Execute the Docker Compose to Up the Database example
 
