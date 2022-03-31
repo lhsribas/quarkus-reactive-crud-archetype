@@ -4,16 +4,16 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
-## Before to run
+## Before the run
 
-You need to run the follow command to give permission to execture scritp mvnw
+You need to run the following command to give permission to execute script mvnw
 ```
 chmod 0755 mvnw
 ```
 
 ## Running the application in dev mode
 
-You can run your application in dev mode that enables live coding using:
+You can run your application in dev mode which enables live coding using:
 ```shell script
 ./mvnw compile quarkus:dev
 ```
@@ -56,10 +56,10 @@ If you want to learn more about building native executables, please consult http
 
 ## CRUD Application
 
-This Applciation is divided in some package, to provide a pretty unsdertood about 
-how to build application with Clean Architecture concepts.
+This Application is divided into some packages, to provide a pretty understood about 
+how to build applications with Clean Architecture concepts.
 
-Each Package has your responsabilities, that will explain below the image:
+Each Package has its responsibilities, which will explain below the image:
 
 ![alt text for screen readers](tree.png "Project Structure")
 
@@ -77,7 +77,7 @@ Each Package has your responsabilities, that will explain below the image:
     
 ## Postgres Container
 
-### Execute the Docker Compose to Up the Dabase example
+### Execute the Docker Compose to Up the Database example
 
 Access the directory of Docker Compose
 
