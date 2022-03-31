@@ -45,6 +45,20 @@ You need to run the following command to give permission to execute script mvnw
 ```
 chmod 0755 mvnw
 ```
+## Postgres Container
+
+### Execute the Docker Compose to Up the Database example
+
+Access the directory of Docker Compose
+
+```shell script
+  cd $path_project/src/main/docker-compose
+```
+
+Run the Docker Compose command to Up the container
+```shell script
+  docker-compose -f postgres.yml up
+```
 
 ## Running the application in dev mode
 
@@ -109,18 +123,3 @@ Each Package has its responsibilities, which will explain below the image:
 
 ### Infra -> DB
     TODO:
-    
-## Postgres Container
-
-### Execute the Docker Compose to Up the Database example
-
-Access the directory of Docker Compose
-
-```shell script
-  cd $path_project/src/main/docker-compose
-```
-
-Run the Docker Compose command to Up the container
-```shell script
-  docker-compose -f postgres.yml up
-```
