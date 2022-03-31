@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>br.com.santander</groupId>
+    <artifactId>quarkus-crud-archetype</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>maven-archetype</packaging>
+
+    <name>Quarkus Clean Arch Crud</name>
+    <description>This archetype generates an CRUD example with Quarkus, Using the concepts of Clean Architecture and Reactive Programming.</description>
+    <url>https://github.com/lhsribas/quarkus-crud-archetype</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Luiz Ribas</name>
+            <email>lhs.ribas@gmail.com</email>
+            <organization>Kubbee Inc</organization>
+            <organizationUrl>https://www.kubbee.com.br</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <archetype.test.skip>true</archetype.test.skip>
+    </properties>
+
+
+    <build>
+
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>3.2.1</version>
+            </extension>
+        </extensions>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.2.0</version>
+                    <configuration>
+                        <!-- Required so that .gitignore gets included in archetypes; see https://stackoverflow.com/a/37322323
+                            and https://issues.apache.org/jira/browse/MRESOURCES-190 -->
+                        <addDefaultExcludes>false</addDefaultExcludes>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-archetype-plugin</artifactId>
+                    <version>3.2.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
