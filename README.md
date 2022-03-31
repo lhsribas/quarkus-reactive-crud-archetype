@@ -11,7 +11,7 @@
    
    3.1 In the case I will create into the path:
    ```
-   $> cd $HOME/git
+   $> cd $HOME/Development/git
    ``` 
    
    3.2 The archetype command generates:
