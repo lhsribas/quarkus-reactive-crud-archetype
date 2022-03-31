@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>br.com.santander</groupId>
-    <artifactId>quarkus-crud-archetype</artifactId>
+    <groupId>io.github.lhsribas</groupId>
+    <artifactId>quarkus-reactive-crud-archetype</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
-    <name>Quarkus Clean Arch Crud</name>
-    <description>This archetype generates an CRUD example with Quarkus, Using the concepts of Clean Architecture and Reactive Programming.</description>
-    <url>https://github.com/lhsribas/quarkus-crud-archetype</url>
+    <name>Quarkus Reactive Crud Archetype</name>
+    <description>This archetype generates an example of Clean Archtecture implementing a Reactive CRUD with Quarkus</description>
+    <url>https://github.com/lhsribas/quarkus-reactive-crud-archetype</url>
 
     <licenses>
         <license>
