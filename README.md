@@ -107,9 +107,46 @@ If you want to learn more about building native executables, please consult http
 This Application is divided into some packages, to provide a pretty understood about 
 how to build applications with Clean Architecture concepts.
 
-Each Package has its responsibilities, which will explain below the image:
+```shell script
+├── app
+│   ├── dto
+│   │   ├── PaymentRequest.java
+│   │   └── PaymentResponse.java
+│   ├── rest
+│   │   ├── PaymentResource.java
+│   │   └── ResourceInterceptor.java
+│   └── service
+│       ├── PaymentServiceFacade.java
+│       └── PaymentService.java
+├── cross
+│   └── ZonedDateFactory.java
+├── domain
+│   ├── entity
+│   │   └── EPayment.java
+│   ├── gateway
+│   │   └── IPaymentGateway.java
+│   └── usecase
+│       ├── IDeletePaymentUseCase.java
+│       ├── IFindPaymentUseCase.java
+│       ├── impl
+│       │   ├── DeletePaymentUseCase.java
+│       │   ├── FindPaymentUseCase.java
+│       │   ├── SavePaymentUseCase.java
+│       │   └── UpdatePaymentUseCase.java
+│       ├── ISavePaymentUseCase.java
+│       └── IUpdatePaymentUseCase.java
+└── infra
+    ├── dataprovider
+    │   └── PaymentDataProvider.java
+    └── db
+        ├── model
+        │   └── Payment.java
+        └── repository
+            ├── IPaymentRepository.java
+            └── PaymentRepository.java
 
-![alt text for screen readers](tree.png "Project Structure")
+```
+Each Package has its responsibilities, that we explain below:
 
 ### App
     TODO:
