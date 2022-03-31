@@ -17,10 +17,10 @@
    3.2 The archetype command generates:
    ```shell script
    $> mvn archetype:generate \
-      -DarchetypeGroupId=br.com.santander \
-      -DarchetypeArtifactId=quarkus-crud-archetype \
+      -DarchetypeGroupId=io.github.lhsribas \
+      -DarchetypeArtifactId=quarkus-reactive-crud-archetype \
       -DinteractiveMode=false \
       -DgroupId=com.quarkus.clean_arch.crud \
-      -DartifactId=quarkus-crud
+      -DartifactId=quarkus-reactive-crud
    ```
-4. probably now, you have the project in your path with the name *quarkus-crud*
+4. probably now, you have the project in your path with the name *quarkus-reactive-crud*
